@@ -1,21 +1,15 @@
 
-#include "MyClass.h"
-using namespace std;
-
-int main()
-{
-    MyString l1, l2(" l2 "), l3 = " l3 ", l4 = l3;
-    cout << l2 << l3 << l4 << endl;
-    l1 = " l1 ";
-    l1 += l2;
-    l1 += " l3 ";
-    cout << l1 << endl;
-    l1 == " l1 l2 l3 "? cout << "equal\n" : cout << "not equal\n";
-    l1 == l2?  cout << "equal\n" : cout << "not equal\n";
-    MyString l5 = l1.reverse();
-    cout << l5 << endl;
-    MyString l6;
-    l6.isEmpty()? cout << "empty\n" : cout << "not empty\n";
-    l5.isEmpty()? cout << "empty\n" : cout << "not empty\n";
+#include "head.h"
+int main() {
+    Field_P l1, l2(4, 3);
+    l1 = 6;
+    l1 = l2;
+    std::cout << l2 << '\n';
+    l1[8] = 9;
+    std::cout << l1 << '\n';
+    l2[8] = 7;
+    Field_P l3;//(l2 + l1) ;//= l2 + l1;
+    l3 = l2 + l1;
+    std::cout << l3 << '\n';
     return 0;
 }
